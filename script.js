@@ -4,10 +4,17 @@ document.getElementById('lapForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const carName = document.getElementById('carName').value;
     const lapTime = parseFloat(document.getElementById('lapTime').value);
+
+    if (carName === "" || isNaN(lapTime) || lapTime <= 0) {
+        alert("Please enter a valid car name and positive lap time!");
+        return;
+    }
+
     lapData.push({ car: carName, time: lapTime });
     console.log("Lap added:", lapData);
     updateTable();
     calculateStats();
+    document.getElementById('lapForm').reset();
 });
 
 function updateTable() {

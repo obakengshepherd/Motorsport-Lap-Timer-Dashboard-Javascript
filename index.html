@@ -2,33 +2,28 @@
 <html>
 <head>
     <title>Motorsport Lap Timer</title>
-
     <style>
-    table { border-collapse: collapse; width: 50%; margin-top: 20px; }
-    th, td { border: 1px solid black; padding: 8px; text-align: left; }
-    form { margin-bottom: 20px; }
-    label { margin-right: 10px; }
-    button { margin-top: 10px; }
-    p { margin: 10px 0; }
-</style>
-
+        table { border-collapse: collapse; width: 50%; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        form { margin-bottom: 20px; }
+        label { margin-right: 10px; }
+        button { margin-top: 10px; }
+        p { margin: 10px 0; }
+    </style>
 </head>
 <body>
     <h1>Lap Timer Dashboard</h1>
-
     <form id="lapForm">
-    <label>Car Name: <input type="text" id="carName"></label><br>
-    <label>Lap Time (seconds): <input type="number" id="lapTime" step="0.1"></label><br>
-    <button type="submit">Add Lap</button>
+        <label>Car Name: <input type="text" id="carName"></label><br>
+        <label>Lap Time (seconds): <input type="number" id="lapTime" step="0.1"></label><br>
+        <button type="submit">Add Lap</button>
     </form>
-
-<h2>Results</h2>
-<table id="resultsTable">
+    <h2>Results</h2>
+    <table id="resultsTable">
+        <tr><th>Car</th><th>Lap Time</th></tr>
+    </table>
     <p>Best Time: <span id="bestTime">N/A</span></p>
     <p>Average Time: <span id="avgTime">N/A</span></p>
-    <tr><th>Car</th><th>Lap Time</th></tr>
-</table>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
