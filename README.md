@@ -3,7 +3,7 @@
 A JavaScript web app to track race car lap times with a form, table, and stats (best/average times).
 
 ## Screenshot
-![Lap Timer Dashboard](https://github.com/your-username/motorsport-lap-timer-js/.../screenshot.png)
+![Lap Timer Dashboard](https://github.com/obakengshepherd/Motorsport-Lap-Timer-Dashboard/commit/90b3a40f085b473afc3d0ef726bf4413f485f799#diff-8ee09dc196ef7ead88bfa2c88fb2fcebd526d8788b924d826a9fa0fd3df3d1ba)
 
 ## Features
 - Input form for car name and lap time
