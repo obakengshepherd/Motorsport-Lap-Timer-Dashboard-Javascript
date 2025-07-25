@@ -8,12 +8,13 @@
         table { border-collapse: collapse; width: 60%; margin-top: 20px; }
         th, td { border: 1px solid #333; padding: 10px; text-align: left; }
         th { background-color: #f2f2f2; }
-        form { margin-bottom: 25px; }
+        form { margin-bottom: 20px; }
         label { display: inline-block; width: 120px; margin: 5px 0; }
         input { padding: 5px; width: 150px; }
         button { padding: 8px 15px; background-color: #333; color: white; border: none; cursor: pointer; }
         button:hover { background-color: #555; }
         p { margin: 10px 0; font-weight: bold; }
+        canvas { border: 1px solid #333; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -29,6 +30,8 @@
     </table>
     <p>Best Time: <span id="bestTime">N/A</span></p>
     <p>Average Time: <span id="avgTime">N/A</span></p>
+    <h2>Lap Time Chart</h2>
+    <canvas id="lapChart" width="400" height="200"></canvas>
     <script src="script.js"></script>
 </body>
 </html>
