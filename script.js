@@ -1,4 +1,4 @@
-// Initialize array to store lap data (car name, lap time)
+// Initialize array to store lap data (car name, lap time).
 const lapData = [];
 
 // Handle form submission
